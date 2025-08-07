@@ -1,0 +1,11 @@
+type User {
+    name: String,
+    username: String,
+    email: String,
+    password: String
+}
+
+type Query {
+    allProfiles: [User],
+    profile(id: String!): User
+}
